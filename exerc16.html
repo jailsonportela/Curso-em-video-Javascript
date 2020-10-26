@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='design/exerc16.css'>
+    <title>verificador de números</title>
+</head>
+<body>
+    <p id="voltar"onclick="modelo()">Voltar</p>
+    <header>
+        <h1 id="boasv">Verificador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+           Número(1-100): <input type="number" id='num'> 
+           <p class='btnsel btn' onclick="putnum()">Selecionar</p>
+        </div>
+        <div id='sec'>
+            <select name='tabsel' id='tabsel' size="10">
+                <option>Selecione o número</option>
+            </select>
+            
+            <p class='btnuse btn' onclick="usenum()">Resultado</p>
+            <p id="aotodo"></p>
+            <p id="sum"></p>
+            <p id="med"></p>
+            <p id="maior"></p>
+            <p id="menor"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Curso em vídeo</p>
+    </footer>
+    <script src="js/exerc16.js"></script>
+</body>
+</html>

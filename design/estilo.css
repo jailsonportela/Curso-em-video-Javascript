@@ -1,0 +1,100 @@
+body{
+font-size: 20px;    
+font-family: Arial, Helvetica, sans-serif;
+background: rgb(70, 142, 236);
+}
+
+
+header{
+cursor:default;
+color: white;    
+text-align: center;
+}
+#titulo{
+    margin-left: 40%;
+    width:20%;
+    text-shadow: 2px 2px 10px black;
+}
+#titulo:hover{ 
+    text-shadow: 0px 0px 20px black; }
+#boasv{ width: 93%; }
+
+#voltar{
+margin: initial;
+color: white;    
+text-align: center;
+cursor: pointer;
+width: 10%;
+padding: 10px 0px;
+background: rgb(182, 182, 182);
+border-radius: 8px;
+box-shadow:5px 5px 10px rgba(0, 0, 0, 0.281);
+float: left;
+}
+#voltar:hover{ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.671); }
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+section div{ padding: 3px; }
+
+section img{
+    margin:auto ;
+    width: 100%;
+}
+section input{ text-align: center; }
+
+section .hourday{ background: rgb(153, 126, 105); }
+
+section .ident{ background: rgb(71, 96, 204); }
+
+section .Nacio{ background: rgb(53, 158, 58); }
+
+section .media{ background: rgba(17, 46, 175, 0.712); }
+
+section .cont{ background: rgba(218, 79, 15, 0.712); }
+
+section .tabuad{ background: rgba(187, 111, 76, 0.712); }
+
+section .login{ background: rgba(45, 47, 180, 0.712); }
+
+section .vefnum{ background: rgba(106, 107, 151, 0.712); }
+
+section .item{
+    color: white;
+    font: 1em arial;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+section .item:hover{
+    padding: 11px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.671);
+}
+section p{ text-align: left; }
+
+#msg{ font-size: 30px; }
+
+#res{ text-align: center; }
+
+#res{ display: inline-block; }
+
+#m{
+  margin-top: 10px;
+  margin-left: 28%;
+  padding:10px 30px;
+}
+
+footer{
+cursor:default;
+color: white;  
+text-align: center;
+}

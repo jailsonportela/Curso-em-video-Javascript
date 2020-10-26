@@ -1,0 +1,20 @@
+p{
+  padding: 30px;
+  background-color: teal;
+  width:22%;
+  margin-left: 30px;
+  cursor: default;
+  font-size: 20px;
+}
+label{
+float: left;
+}
+input{
+  display: block;
+  margin-top: 10px;
+}
+#m{
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 7%;
+}

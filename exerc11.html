@@ -1,0 +1,84 @@
+<html>
+    <head>
+      <meta charset='UTF-8'>
+      <title>Nacionalidade</title>
+      <link rel='stylesheet' href='design/estilo.css'>
+    </head>
+    <body>
+        <p id="voltar"onclick="modelo()">Voltar</p>
+        <header>
+            <h1 id='boasv'>Verificador de Nacionalidade</h1>
+        </header>
+    <section>
+        Nacionalidade: <input type='text' id='pais'>
+       <input type="button" value='verificar' onclick="Checagem()">
+       <span id='res'></span>
+    </section>
+       
+       <script src="js/roteiro.js"></script>
+       <script>
+            var pais=document.querySelector('input#pais')
+            pais.addEventListener=('keydown',function tecla(e){
+                if (e.keydown === 13) {
+                    alert('deu!')
+                }
+            })
+           function Checagem(){
+           
+            
+            //transformar primeira letra em maíuscula
+            var str=pais.value
+            var prim= str.charAt(0)
+            var rest=str.slice(1)
+            str = prim.toUpperCase() + rest.toLowerCase()
+
+            for (var i = 0; i < str.length; i++) {
+        if (str.charAt(i) ===' ') {
+            var charToUper=str.charAt(i+1).toUpperCase();
+            var sliceBegin = str.slice(0, (i+1));
+            var sliceEnd = str.slice(i + 2);
+            //reconhecer de da do e 
+            if( (str.charAt(i+1)=='d' || str.charAt(i+1)=='e') && (str.charAt(i+2)===' ' || str.charAt(i+3)===' ')){
+                charToUper=str.charAt(i+1).toLowerCase();
+            }
+            str = sliceBegin + charToUper + sliceEnd;
+        }   
+    }
+    pais.value=str
+        var result=document.getElementById('res')
+        //parte booleana de tratar valores numerais
+        var bole=false
+        for (var i=0;i<=str.length;i++){
+        console.log(str[i])
+        var p=Number(str)
+        if(Number.isNaN(p)){
+            bole=false
+        }else{
+            bole=true
+        }
+    }   
+        //pegar as siglas ISO 2 letras
+        var siglas=['Af','Za','Al','De','Ad','Ao']
+        var paises=['Afeganistao','África do Sul','Albânia','Alemanha','Andorra','Angola']
+        //siglas (caso o usuário coloque)
+        var iniciais=pais.value.substring(0,2)
+        var seglet=iniciais.slice(0)
+        for(var i=0;i<siglas.length;i++){
+             if(iniciais==siglas[i]){
+                 pais.value=paises[i]
+             }
+        }
+
+        //tratamento dos erros booleanos
+        if(bole==true){
+            result.innerHTML='<p>Coloque apenas letras!'
+        }else if(bole==false){
+            result.innerHTML='<p>Você é de <strong>'+pais.value+'</strong></p>'
+        }
+           }
+       </script>
+       <footer>
+        <p>&copy;Curso em vídeo</p>
+    </footer>
+    </body>
+</html>

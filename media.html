@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width-device-width, initial scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie-edge">
+     <link rel="stylesheet" href="design/estilo.css">
+     <script rel="text/javascript" src="meujs.js"></script>
+     <title>meu site</title>
+    </head>
+     <body>
+        <p id="voltar"onclick="modelo()">Voltar</p>
+         <header>
+             <h1 id='boasv'>Tire sua Média!</h1>
+         </header>
+         <section>
+    <div>
+        <label>Nota 1:</label> <input type="number" name='n1' id='n1'>
+    </div>
+    <div>
+        <label>Nota 2:</label> <input type="number" name='n2' id='n2'>
+        <div id='res'></div>
+    </div>
+    <div>
+        <label>Nota 3:</label> <input type="number" name='n3' id='n3'>
+    </div>
+    <div>
+        <button id='m' onclick="media()">Nota</button>
+    </div>
+
+</section>
+        <script src="js/roteiro.js"></script>
+        <script>
+        function media(){
+            res=document.getElementById('res')
+            var tn1=document.getElementById('n1')
+            var tn2=document.getElementById('n2')
+            var tn3=document.getElementById('n3')
+            var n1=Number(tn1.value)
+            var n2=Number(tn2.value)
+            var n3=Number(tn3.value)
+            var media=(n1+n2+n3)/3
+            res.innerText='Média: '+media.toFixed(2)
+        }
+        </script>
+           <footer>
+            <p>&copy;Curso em vídeo</p>
+        </footer>
+
+     </body>
+</html>

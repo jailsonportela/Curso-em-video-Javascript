@@ -1,0 +1,81 @@
+body{
+font-size: 20px;    
+font-family: Arial, Helvetica, sans-serif;
+background: rgb(70, 142, 236);
+}
+
+
+header{
+cursor:default;
+color: white;    
+text-align: center;
+}
+
+#boasv{width: 93%;}
+
+#voltar{
+margin: initial;
+color: white;    
+text-align: center;
+cursor: pointer;
+width: 10%;
+padding: 10px 0px;
+background: rgb(79, 77, 196);
+border-radius: 8px;
+box-shadow:5px 5px 10px rgba(0, 0, 0, 0.281);
+float: left;
+}
+#voltar:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.671);
+}
+
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+section div{
+    padding: 3px;
+}
+    .btncont{
+        width: 55px;
+        cursor: pointer;
+        box-shadow:4px 4px 4px rgba(0, 0, 0, 0.349);
+        color: white;
+        background:rgb(70, 142, 236);
+        padding:10px;
+        border: none;
+        border-radius: 15px;
+        font:20px arial;
+    }
+    .btnsel{
+        display: inline;
+        cursor: pointer;
+        box-shadow:4px 4px 4px rgba(0, 0, 0, 0.349);
+        color: white;
+        background:rgb(70, 142, 236);
+        padding:10px;
+        border: none;
+        border-radius: 15px;
+        font:20px arial;
+    }
+    .btn:hover{
+        box-shadow:5px 5px 5px rgb(0, 0, 0);
+        padding:12px;
+    }
+section .item:hover{
+    padding: 11px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.671);
+}
+section p{
+    text-align: left;
+}
+footer{
+cursor:default;
+color: white;  
+text-align: center;
+}
